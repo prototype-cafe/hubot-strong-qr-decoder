@@ -13,11 +13,13 @@
 # Author:
 #   knjcode <knjcode@gmail.com>
 
+Path = require 'path'
 exec = require('child_process').exec
 
 module.exports = (robot) ->
+  path = Path.resolve __dirname
   robot.respond /sqrd ((.*\s*)+)/i, (msg) ->
-    exec 'python src/sqrd.py ' + msg.match[1], (error, stdout, stderr) ->
+    exec 'python ' + path + '/sqrd.py ' + msg.match[1], (error, stdout, stderr) ->
       if error
         msg.reply stderr
         return
