@@ -1,4 +1,4 @@
-# hubot-strong-qr-decoder
+# hubot-strong-qr-decoder [![Build Status][travis-image]][travis-url]
 
 A hubot script that decode a QR code.  
 This script is a wrapper of [waidotto/strong-qr-decoder](https://github.com/waidotto/strong-qr-decoder).
@@ -42,3 +42,6 @@ optional arguments:
 ## Reference
 
 [waidotto/strong-qr-decoder](https://github.com/waidotto/strong-qr-decoder)
+
+[travis-url]: https://travis-ci.org/prototype-cafe/hubot-strong-qr-decoder
+[travis-image]: https://travis-ci.org/prototype-cafe/hubot-strong-qr-decoder.svg?branch=master
