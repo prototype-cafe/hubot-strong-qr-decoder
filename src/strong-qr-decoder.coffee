@@ -5,7 +5,7 @@
 #   None
 #
 # Commands:
-#   hubot sqrd - <what the respond trigger does>
+#   hubot sqrd - decode a QR code
 #
 # Notes:
 #   <optional notes required for the script>
@@ -18,8 +18,11 @@ exec = require('child_process').exec
 
 module.exports = (robot) ->
   path = Path.resolve __dirname
-  robot.respond /sqrd ((.*\s*)+)/i, (msg) ->
-    exec 'python ' + path + '/sqrd.py ' + msg.match[1], (error, stdout, stderr) ->
+  robot.respond /sqrd((.*\s*)+)/i, (msg) ->
+    [args, code...] = msg.match[1].split('\n')
+    cmd = 'echo "' + code.join('\n') + '" | python ' + path + '/sqrd.py ' + args
+
+    exec cmd, (error, stdout, stderr) ->
       if error
         msg.reply stderr
         return
