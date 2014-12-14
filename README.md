@@ -21,6 +21,36 @@ Then add **hubot-strong-qr-decoder** to your `external-scripts.json`:
 
 ## Sample Interaction
 
+Input text of QR code into hubot as below.
+
+```
+user1>> hubot sqrd
+XXXXXXX_XXXXX_XXXXXXX
+X_____X__X_X__X_____X
+X_XXX_X__XX___X_XXX_X
+X_XXX_X__XXX__X_XXX_X
+X_XXX_X___X_X_X_XXX_X
+X_____X____XX_X_____X
+XXXXXXX_X_X_X_XXXXXXX
+________XXXXX________
+XX_XX_X__XX_X_X_____X
+X_X__X_XXX__X_X_XXX__
+__XXXXX__XX__XX_X_XXX
+_XXX_X__X_XX______X__
+_____XXXXX____X_____X
+________X_XXX__X__X__
+XXXXXXX__XX_XXXXXX___
+X_____X___XXXX_XXXX_X
+X_XXX_X_X_XXX_XX___XX
+X_XXX_X_XX_XX___X_X__
+X_XXX_X_______X__XXXX
+X_____X_XXX__XX_X_XXX
+XXXXXXX_X__X______X__
+hubot>> test
+```
+
+You can also specify options as below.  
+Of course, you can both specify options and text of QR code.
 ```
 user1>> hubot sqrd -h
 hubot>> usage: sqrd.py [-h] [-e ERROR_CORRECTION] [-m MASK] [-n] [-v] [FILE]
@@ -39,6 +69,7 @@ optional arguments:
   -v, --verbose         詳細な情報を表示
 
 ```
+
 ## Reference
 
 [waidotto/strong-qr-decoder](https://github.com/waidotto/strong-qr-decoder)
