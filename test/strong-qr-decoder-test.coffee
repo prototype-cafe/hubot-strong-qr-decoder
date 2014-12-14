@@ -13,4 +13,4 @@ describe 'strong-qr-decoder', ->
     require('../src/strong-qr-decoder')(@robot)
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/sqrd ((.*\s*)+)/i)
+    expect(@robot.respond).to.have.been.calledWith(/sqrd((.*\s*)+)/i)
