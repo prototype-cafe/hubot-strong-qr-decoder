@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "author": "knjcode <knjcode@gmail.com>",
   "license": "MIT",
-  "keywords": "hubot, hubot-scripts",
+  "keywords": "hubot, hubot-scripts, QR",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-strong-qr-decoder.git"
+    "url": "git://github.com/prototype-cafe/hubot-strong-qr-decoder.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-strong-qr-decoder/issues"
+    "url": "https://github.com/prototype-cafe/hubot-strong-qr-decoder/issues"
   },
   "dependencies": {},
   "peerDependencies": {
